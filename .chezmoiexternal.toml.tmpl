@@ -1,0 +1,7 @@
+{{- if and (hasKey . "work_repo_url") .work_repo_url }}
+[".config/work-profile"]
+    type = "git-repo"
+    url = "{{ .work_repo_url }}"
+    refreshPeriod = "24h"
+{{- end }}
+
