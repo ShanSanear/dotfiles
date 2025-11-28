@@ -1,0 +1,11 @@
+max-history=10
+sort=-time
+on-button-right=dismiss
+on-button-middle=dismiss-group
+on-button-left=invoke-default-action
+font=Ubuntu Mono Nerd Font 12
+default-timeout=2000
+output=DP-3
+anchor=bottom-right
+group-by=app-name
+

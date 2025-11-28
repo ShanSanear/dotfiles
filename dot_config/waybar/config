@@ -1,0 +1,3 @@
+"wlr/taskbar": {
+    "tooltip-format": "{title} | {app_id}",
+}
