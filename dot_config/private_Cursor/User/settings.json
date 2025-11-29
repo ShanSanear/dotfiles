@@ -1,0 +1,16 @@
+{
+    "window.commandCenter": true,
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.external.osxExec": "alacritty",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.inheritEnv": true,
+    "git.autofetch": true,
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.18-linux-g++_from_PATH",
+            "path": "/usr/bin/qtpaths"
+        }
+    ],
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-macchiato"
+}
