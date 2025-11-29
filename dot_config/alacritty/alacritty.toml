@@ -14,5 +14,5 @@ y = 15
 
 [general]
 import = [
-    "dank-theme.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
 ]

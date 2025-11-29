@@ -14,6 +14,7 @@ zstyle :compinstall filename '/home/shan/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+# Most colorscheme styles are from https://github.com/catppuccin/catppuccin (mocha)
 
 autoload zkbd
 [[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE ]] && zkbd
@@ -41,9 +42,9 @@ source /usr/share/nvm/init-nvm.sh
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-eval "$(starship init zsh)"
 
 source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
 
 plugins=(git)
 
@@ -53,3 +54,7 @@ eval "$(atuin init zsh)"
 if [ -f "$HOME/.config/work-profile/aliases.zsh" ]; then
     source "$HOME/.config/work-profile/aliases.zsh"
 fi
+
+source "$HOME/.zsh_aliases"
+# Some bat settings
+export BAT_PAGER="builtin"

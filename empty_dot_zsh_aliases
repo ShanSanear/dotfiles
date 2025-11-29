@@ -1,0 +1,11 @@
+#alias cat=bat
+#alias grep=batgrep
+#alias man=batman
+#alias less=batpipe
+#alias watch=batwatch
+#alias diff=batdiff
+
+# https://github.com/sharkdp/bat, but by default this clashes with reloading ZSH, so changing this to :B instead
+# https://github.com/ohmyzsh/ohmyzsh/issues/12457
+alias -g -- :B='-h 2>&1 | bat --language=help --style=plain'
+# alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
