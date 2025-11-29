@@ -3,8 +3,8 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 //
-// Taken from https://github.com/YaLTeR/niri/issues/2477
-debug {
+// Taken from https://github.com/YaLTeR/niri/issues/2477, but seems to be not needed
+/-debug {
     honor-xdg-activation-with-invalid-serial
     wait-for-frame-completion-before-queueing
 }
