@@ -2,6 +2,12 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
+//
+// Taken from https://github.com/YaLTeR/niri/issues/2477
+debug {
+    honor-xdg-activation-with-invalid-serial
+    wait-for-frame-completion-before-queueing
+}
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -115,7 +121,8 @@ output "DP-1" {
 }
 
 output "DP-3" {
-    variable-refresh-rate
+// Even though I am pretty certain it does support VRR, but it started flickering for some reason, so disabling it was only option
+//    variable-refresh-rate
     position x=-2560 y=0
 }
 
