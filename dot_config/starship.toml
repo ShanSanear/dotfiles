@@ -26,7 +26,6 @@ $conda\
 $time\
 [ ](fg:lavender)\
 $cmd_duration\
-$sudo\
 $line_break\
 $character"""
 
@@ -70,9 +69,6 @@ format = '[ $user]($style)'
 ssh_only=false
 style = "bg:red fg:crust"
 format='[$ssh_symbol@$hostname]($style)'
-
-[sudo]
-disabled = false
 
 [directory]
 style = "bg:peach fg:crust"
